@@ -30,14 +30,11 @@ The simplest method is to use the hosted version from jsDelivr:
 
 
 // 1. create or fetch data
-let data = { engine: "Documento", food: "🥞"}
+let data = {food: "🥞"}
 
 // 2. create a template
 var template = html`
-<p>
-My favorite template engine is ${data.engine},
-My favorite food is: ${data.food} 
-</p>
+<p>My favorite food is ${data.food}</p>
 `
 // 3. add your template
 doc.html({ add: template })
@@ -45,7 +42,7 @@ doc.html({ add: template })
 
 #### Results
 ```html 
-<p>My favorite food is: ${data.food}</p> 
+<p>My favorite food is 🥞</p> 
 ```
 
 ## Anatomy 
