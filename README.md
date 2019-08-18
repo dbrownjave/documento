@@ -2,10 +2,10 @@
 
 
 ## Description 
-Documento is a microsized, simple and fast JS templating engine
-
+Documento is a microsized, simple and fast JS templating engine that takes a template and data, and returns the template filled with the data. 
 
 ## Features
+- [X] Vanilla JS 🍦
 - [X] No dependencies required
 - [X] Light-weight
 - [X] Extremely Fast
@@ -23,22 +23,33 @@ The simplest method is to use the hosted version from jsDelivr:
 ```
 
 
-## Usage
+## Usage 
 
-```html
+### Simple Template:
+```js
 
+
+// 1. create or fetch data
+let data = { engine: "Documento", food: "🥞"}
+
+// 2. create a template
+var template = html`
+<p>
+My favorite template engine is ${data.engine},
+My favorite food is: ${data.food} 
+</p>
+`
+// 3. add your template
+doc.html({ add: template })
 ```
 
+#### Results
+```html 
+<p>My favorite food is: ${data.food}</p> 
+```
 
 ## Anatomy 
 
-
-
-## Browser support
-- Chrome
-- Firefox
-- Safari
-- Microsoft Edge
 
 ## Sponsors
 If you are interested in becoming a sponsor, please feel free to contact us!
