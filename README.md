@@ -17,14 +17,9 @@ Documento is a microsized, simple and fast JS templating engine
 The simplest method is to use the hosted version from jsDelivr:
 
 
-#### CSS
-```html
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/dbrownjave/">
-```
-
 #### JS
 ```html
-  <script src="https://cdn.jsdelivr.net/gh/dbrownjave/"></script>
+  <script src="https://cdn.jsdelivr.net/gh/dbrownjave/documento.js/dist/documento.js"></script>
 ```
 
 
